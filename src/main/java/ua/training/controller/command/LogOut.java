@@ -1,4 +1,10 @@
 package ua.training.controller.command;
 
-public class LogOut {
+import javax.servlet.http.HttpServletRequest;
+
+public class LogOut implements Command {
+    @Override
+    public String execute(HttpServletRequest request) {
+        return null;
+    }
 }

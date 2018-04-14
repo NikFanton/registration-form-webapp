@@ -1,4 +1,10 @@
 package ua.training.controller.command;
 
-public class Registration {
+import javax.servlet.http.HttpServletRequest;
+
+public class Registration implements Command {
+    @Override
+    public String execute(HttpServletRequest request) {
+        return null;
+    }
 }
