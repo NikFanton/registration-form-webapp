@@ -1,4 +1,7 @@
 package ua.training.model.dao;
 
-public class UserDAO {
+import ua.training.model.entity.User;
+
+public interface UserDAO extends GenericDAO<User, Long> {
+    User getByLogin(String login);
 }

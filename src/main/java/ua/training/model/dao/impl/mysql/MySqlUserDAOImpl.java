@@ -35,4 +35,9 @@ public class MySqlUserDAOImpl implements UserDAO {
     public void close() throws Exception {
 
     }
+
+    @Override
+    public User getByLogin(String login) {
+        return null;
+    }
 }
