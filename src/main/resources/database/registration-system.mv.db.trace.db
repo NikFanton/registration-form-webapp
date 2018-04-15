@@ -1,0 +1,4 @@
+2018-04-14 13:08:08 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Таблица "USER" не найдена
+Table "USER" not found; SQL statement:
+select * from user [42102-196]
