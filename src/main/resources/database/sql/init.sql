@@ -2,8 +2,9 @@ DROP TABLE IF EXISTS user;
 
 CREATE TABLE user (
     id        INT(32) AUTO_INCREMENT PRIMARY KEY,
-    login     VARCHAR(64) NOT NULL ,
-    password  VARCHAR(64) NOT NULL );
+    login     VARCHAR(64) NOT NULL,
+    password  VARCHAR(64) NOT NULL,
+    UNIQUE(login));
 
 INSERT INTO user (login, password) VALUES
   ('jack123', '12345'),

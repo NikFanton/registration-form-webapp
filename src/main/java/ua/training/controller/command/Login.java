@@ -11,7 +11,7 @@ public class Login implements Command {
     public String execute(HttpServletRequest request) {
         String login = request.getParameter("login");
         String password = request.getParameter("pass");
-        DAOFactory daoFactory = DAOFactory.getDaoFactory(DAOFactory.H2);
+        DAOFactory daoFactory = DAOFactory.getDaoFactory();
         UserDAO dao = daoFactory.getUserDAO();
         User user = dao.getByLogin(login);
         if (user != null && user.getPassword().equals(password)) {

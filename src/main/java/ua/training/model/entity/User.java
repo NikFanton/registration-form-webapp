@@ -2,20 +2,20 @@ package ua.training.model.entity;
 
 public class User {
     private Long id;
-    private String username;
+    private String login;
     private String password;
 
     public User() {
     }
 
-    public User(String username, String password) {
-        this.username = username;
+    public User(String login, String password) {
+        this.login = login;
         this.password = password;
     }
 
-    public User(Long id, String username, String password) {
+    public User(Long id, String login, String password) {
         this.id = id;
-        this.username = username;
+        this.login = login;
         this.password = password;
     }
 
@@ -27,12 +27,12 @@ public class User {
         this.id = id;
     }
 
-    public String getUsername() {
-        return username;
+    public String getLogin() {
+        return login;
     }
 
-    public void setUsername(String username) {
-        this.username = username;
+    public void setLogin(String login) {
+        this.login = login;
     }
 
     public String getPassword() {
@@ -47,7 +47,7 @@ public class User {
     public String toString() {
         return "User{" +
                 "id=" + id +
-                ", username='" + username + '\'' +
+                ", login='" + login + '\'' +
                 ", password='" + password + '\'' +
                 '}';
     }

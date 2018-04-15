@@ -151,7 +151,7 @@
 
     <button onclick="document.getElementById('registration').style.display='block'" style="width:auto;">Registration</button>
     <div id="registration" class="modal">
-        <form class="modal-content animate" action="/api/login" method="post">
+        <form class="modal-content animate" action="/api/registration" method="post">
             <div class="container">
                 <h1 class="h3 mb-3 font-weight-normal" style="margin-top: 20px">Registraion form</h1>
                 <h5 class="h5 font-weight-normal">Login</h5>
